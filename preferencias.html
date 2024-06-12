@@ -1,0 +1,161 @@
+<!DOCTYPE html><!-- Define la versión de HTML que estás utilizando (en este caso, HTML5) -->
+<html lang="en">
+<!-- La etiqueta html es el contenedor principal de todo el contenido de la página. El atributo lang especifica el idioma del documento.-->
+
+<head><!--¿cómo esta configurada la página? lo lee el navegador y los robots de búsqueda: usar palabras clave-->
+    <!--metadatos:-->
+    <meta charset="UTF-8"><!--disoposición del teclado (ñ y caracteres especiales)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--escala, hacer diseño responsive. 1.0 es escala completa. mobile first-->
+    <meta name="author" content="Camila ChirinO Castell">
+    <meta name="description" content="Proyecto HTML Portfolio Camila Chirino Castell">
+    <meta name="keywords" content="portfolio,web developmen, html, frontend">
+    <!--palabras clave para posicionarse a nivel CEO-->
+    <!--links:-->
+    <link rel="stylesheet" href="style.css"><!--conectar con css-->
+    <link rel="shortcut icon" href="icons8-corazones-96.png" type="image/x-icon"><!--incono en pestaña del navegador.Referencia de autor/a--><!--<a target="_blank" href="https://icons8.com/icon/67555/favorite">Favorite</a> icono de <a target="_blank" href="https://icons8.com">Icons8</a>-->
+    <title>HTML CCC</title><!--lo que aparece en la pestaña del navegador-->
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #92a4ff;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        table {
+            border-collapse: collapse;
+            border: 2px solid rgb(200, 200, 200);
+            letter-spacing: 1px;
+            font-size: 1.5rem;
+            background-color: #FFF;
+        }
+
+        td {
+            border: 1px solid rgb(190, 190, 190);
+            padding: 10px 20px;
+        }
+
+        th {
+            border: 1px solid rgb(190, 190, 190);
+            padding: 10px 20px;
+            background-color: rgb(162, 162, 162);
+        }
+
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+</head>
+<body><!--lo que ve el usuario-->
+    <!--links-->
+    <script src="index.js"></script><!--conectar con javascript-->
+    <!--estructura base-->
+    <header>
+        <h1>Mercados de la tierra</h1>
+        <nav><!--sección de navegación-->
+         <ul><!--lista desordenada para menú horizontal-->
+            <li><a href="ccc.proyecto.sergiecode.html">Home</a></li>
+            <li><a class="active" href="preferencias.html">Preferencias</a></li>
+            <li><a href="audiovisuales.html">Audiovisuales</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+         </ul>
+        </nav>
+    </header>
+    <h2 style="margin: 15px;">Preferencias</h2>    
+    <hr> 
+    <div class="container">
+        <table>
+            <colgroup>
+                <col style="background-color: rgb(255, 255, 255);">
+                <col style="background-color: rgb(177, 173, 175);">
+                <col style="background-color: rgb(94, 93, 91);">
+                <col style="background-color: rgb(246, 244, 244);">
+            </colgroup>
+            <tr>
+                <th>&nbsp;</th> <!--non-breaking space" (espacio de no separación o espacio irrompible)-->
+                <th>Tipo de piel</th>
+                <th>Presentación</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td>Serum Vitamina C</td>
+                <td>todo tipo de piel</td>
+                <td>aplicador en gotas</td>
+                <td>$5.900</td>
+            </tr>
+            <tr>
+                <td>Agua de Rosas</td>
+                <td>Todo tipo de piel, recomendado para piel seca</td>
+                <td>bruma facial</td>
+                <td>$4.900</td>
+            </tr>
+            <tr>
+                <td>Jabon de carbón activado</td>
+                <td>Todo tipo de piel</td>
+                <td>barra sólida</td>
+                <td>$3.400</td>
+            </tr>
+            <tr>
+                <td>Jabon de carbón activado</td>
+                <td>Todo tipo de piel</td>
+                <td>barra sólida</td>
+                <td>$3.400</td>
+            </tr>
+        </table>
+
+    </div>
+    <footer class="footer">
+        <p>Derechos reservados &copy; 2024</p><!--copy: simbolo en pantalla-->
+    </footer>
+</body>
+
+</html>

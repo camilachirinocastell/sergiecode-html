@@ -1,0 +1,155 @@
+<!DOCTYPE html><!-- Define la versión de HTML que estás utilizando (en este caso, HTML5) -->
+<html lang="en">
+<!-- La etiqueta html es el contenedor principal de todo el contenido de la página. El atributo lang especifica el idioma del documento.-->
+
+<head><!--¿cómo esta configurada la página? lo lee el navegador y los robots de búsqueda: usar palabras clave-->
+    <!--metadatos:-->
+    <meta charset="UTF-8"><!--disoposición del teclado (ñ y caracteres especiales)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--escala, hacer diseño responsive. 1.0 es escala completa. mobile first-->
+    <meta name="author" content="Camila ChirinO Castell">
+    <meta name="description" content="Proyecto HTML Portfolio Camila Chirino Castell">
+    <meta name="keywords" content="portfolio,web developmen, html, frontend">
+    <!--palabras clave para posicionarse a nivel CEO-->
+    <!--links:-->
+    <link rel="stylesheet" href="style.css"><!--conectar con css-->
+    <link rel="shortcut icon" href="icons8-corazones-96.png" type="image/x-icon"><!--incono en pestaña del navegador.Referencia de autor/a--><!--<a target="_blank" href="https://icons8.com/icon/67555/favorite">Favorite</a> icono de <a target="_blank" href="https://icons8.com">Icons8</a>-->
+    <title>HTML CCC</title><!--lo que aparece en la pestaña del navegador-->
+    
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #92a4ff;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .image {
+            float: right;
+            margin: 0 0 20px 20px;
+            max-width: 25%;
+            height: auto;
+        }
+
+        .image2 {
+            float: left;
+            margin: 0 20px 20px 0;
+            max-width: 25%;
+            height: auto;
+        }
+        .article {
+            float: left;
+            width: 70%;
+            background-color: #FFF;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #CCC;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+</head>
+<body><!--lo que ve el usuario-->
+    <!--links-->
+    <script src="index.js"></script><!--conectar con javascript-->
+    <!--estructura base-->
+    <header>
+        <h1>Mercados de la tierra</h1>
+        <nav><!--sección de navegación-->
+            <ul><!--lista desordenada para menú horizontal-->
+             <li><a class="active" href="ccc.proyecto.sergiecode.html">Home</a></li>
+             <li><a href="preferencias.html">Preferencias</a></li>
+             <li><a href="audiovisuales.html">Audiovisuales</a></li>
+             <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2 style="margin: 15px;">Presentación</h2>    
+    <hr> 
+    <section>
+        <article class="container">
+         <h3>Presentación Mercados de la Tierra</h3>
+         <img  class="image" src="/assets/img/imagen logo.jpg" alt="Imagen Mercados de latierra">
+         <p>Mercados de la Tierra es una marca de <b>cosmética natural</b> dedicada a transformar la salud de tu piel mediante productos elaborados exclusivamente con <strong> ingredientes naturales</strong>. Nuestra misión es proporcionar una alternativa saludable y efectiva a los cosméticos convencionales, que a menudo contienen productos químicos y aditivos sintéticos.</p>
+         <img class="image2" src="/assets/img/productos.jpg" alt="Productos Mercados de la tierra">    
+         <p><b>Nuestra Filosofía:</b> <i>creemos en el poder de la naturaleza para cuidar y revitalizar tu piel</i>. Por eso, todos nuestros productos están formulados sin el uso de químicos artificiales. Optamos por ingredientes de origen vegetal y mineral, garantizando que cada componente sea biocompatible y beneficie a tu piel de manera natural.</p>
+         <img class="image" src="/assets/img/imagen serum.jpg" alt="Serum Mercados de la Tierra">
+         <h4><b>Sostenibilidad:</b></h4>
+         <p>
+            <em>Sin Parabenos:</em> Utilizamos conservantes naturales para asegurar la frescura y eficacia de nuestros productos.<br>
+            <em>Sin Sulfatos:</em> Nuestros limpiadores están formulados para ser suaves y no eliminar los aceites naturales de tu piel.<br>
+            <em>Sin Fragancias Sintéticas:</em> Empleamos aceites esenciales naturales para aportar aromas agradables y propiedades terapéuticas adicionales.<br>
+            <em>Sin Colorantes Artificiales:</em> Los colores de nuestros productos provienen únicamente de extractos de plantas y minerales naturales.
+         </p>
+         
+        </article>
+    </section>    
+    <footer class="footer">
+        <p>Derechos reservados &copy; 2024</p><!--copy: simbolo en pantalla-->
+    </footer>
+</body>
+
+</html>

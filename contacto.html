@@ -1,0 +1,152 @@
+<!DOCTYPE html><!-- Define la versión de HTML que estás utilizando (en este caso, HTML5) -->
+<html lang="en">
+<!-- La etiqueta html es el contenedor principal de todo el contenido de la página. El atributo lang especifica el idioma del documento.-->
+
+<head><!--¿cómo esta configurada la página? lo lee el navegador y los robots de búsqueda: usar palabras clave-->
+    <!--metadatos:-->
+    <meta charset="UTF-8"><!--disoposición del teclado (ñ y caracteres especiales)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--escala, hacer diseño responsive. 1.0 es escala completa. mobile first-->
+    <meta name="author" content="Camila ChirinO Castell">
+    <meta name="description" content="Proyecto HTML Portfolio Camila Chirino Castell">
+    <meta name="keywords" content="portfolio,web developmen, html, frontend">
+    <!--palabras clave para posicionarse a nivel CEO-->
+    <!--links:-->
+    <link rel="stylesheet" href="style.css"><!--conectar con css-->
+    <link rel="shortcut icon" href="icons8-corazones-96.png" type="image/x-icon"><!--incono en pestaña del navegador.Referencia de autor/a--><!--<a target="_blank" href="https://icons8.com/icon/67555/favorite">Favorite</a> icono de <a target="_blank" href="https://icons8.com">Icons8</a>-->
+    <title>HTML CCC</title><!--lo que aparece en la pestaña del navegador-->
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        input[type=text],
+        input[type=email],
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        div.contenedor-formulario {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+</head>
+<body><!--lo que ve el usuario-->
+    <!--links-->
+    <script src="index.js"></script><!--conectar con javascript-->
+    <!--estructura base-->
+    <header>
+        <h1>Mercados de la tierra</h1>
+        <h2>Cosmética Natural</h2>
+        <nav>
+         <ul>
+            <li><a href="ccc.proyecto.sergiecode.html">Home</a></li>
+            <li><a href="preferencias.html">Preferencias</a></li>
+            <li><a href="audiovisuales.html">Audiovisuales</a></li>
+            <li><a class="active" href="contacto.html">Contacto</a></li>
+         </ul>
+        </nav>
+    </header>
+    <hr>
+    <div class="contenedor-formulario">
+     <form>
+        <label for="nombre">Nombre/Comercio:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribí aquí tu nombre" requiered minlength="3">
+        <label for="mail">Mail de contacto: </label>
+        <input type="email" id="mail" name="mail" placeholder="Escribí aquí tu mail"required minlength="3">
+        <label for="motivo"> Motivo de contacto:</label>
+        <select name="motivo" id="motivo">
+            <option value="Minorista">Compra minorista</options>
+            <option value="Mayorista">Compra mayorista</options>      
+            <option value="otro">Otro</options>      
+        </select>
+        <label for="comentarios">Comentarios:</label>
+        <textarea name="comentarios" id="comentarios" placeholder="Escribí aquí tu comentario"></textarea>
+        <label for="interes">Productos de interés:</label>
+        <input type="radio" id="interes"name="interes"><i>Serum vitmina C</i>
+        <input type="radio" id="interes"name="interes"><i>Jabón de carbón activado</i>
+        <input type="radio" id="interes"name="interes"><i>Bálsamo de labios color</i>
+        <input type="submit"value="Enviar">
+    </form>
+    </div>
+    </section>
+    <aside></aside>
+    <footer class="footer">
+        <p>Derechos reservados &copy; 2024</p><!--copy: simbolo en pantalla-->
+    </footer>
+</body>
+
+</html>
